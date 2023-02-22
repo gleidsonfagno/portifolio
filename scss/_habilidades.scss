@@ -15,11 +15,12 @@
           color: #FFFFFF;
      }
      .principal{
-          width: 480px;
+          max-width: 480px;
           background: #2a2d37;
           border-radius: 12px;
           margin: 0 auto;
           padding: 1rem;
+          margin: 0 1rem;
           .dev{
                display: flex;
                flex-direction: row;

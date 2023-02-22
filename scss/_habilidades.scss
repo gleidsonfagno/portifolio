@@ -1,0 +1,56 @@
+.habilidades{
+     text-align: center;
+     padding-bottom: 120px;
+     h3{
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 36px;
+          letter-spacing: 0.1em;
+          color: #4C70EF;
+     }
+     h2{
+          font-weight: 600;
+          font-size: 36px;
+          line-height: 54px;
+          color: #FFFFFF;
+     }
+     .principal{
+          width: 480px;
+          background: #2a2d37;
+          border-radius: 12px;
+          margin: 0 auto;
+          padding: 1rem;
+          .dev{
+               display: flex;
+               flex-direction: row;
+               align-items: center;
+               gap: 16px;
+               padding: 20px  30px  ;
+               span{
+                    display: block;
+                    max-width: 66px;
+                    height: 66px;
+                    width: 100%;
+                    background: #38405A;
+                    border-radius: 8px;
+                    img{
+                         display: block;
+                         width: 100%;
+                    }
+               }
+               h2{
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 36px;  
+               }
+          }
+          p{
+               font-weight: 400;
+               font-size: 18px;
+               line-height: 27px;
+               display: flex;
+               align-items: center;
+               color: #B0ADAD;
+          }
+     }
+}

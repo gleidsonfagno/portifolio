@@ -1,0 +1,27 @@
+.sobre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    .avatar{
+        img{
+            display: block;
+            max-width: 400px;
+            width: 100%;
+            // max-width: 100%;
+            height: auto;
+        }
+    }
+    .sobre_min{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+        .descricao_pesoal{
+
+        }
+        button{
+           text-align: start;
+        }
+    }
+}

@@ -3,25 +3,63 @@
     justify-content: space-between;
     align-items: center;
     gap: 70px;
+    margin-top: 155px;
+    margin-bottom: 155px;
     .avatar{
         img{
             display: block;
-            max-width: 400px;
+            // max-width: 400px;
             width: 100%;
+            max-width: 440px;
             // max-width: 100%;
             height: auto;
         }
     }
     .sobre_min{
+        max-width: 590px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 32px;
         justify-content: center;
         .descricao_pesoal{
-
+            p{
+                color: green;
+                font-size: 1rem;
+            }
+            h2{
+                font-size: 24px;
+                font-weight: 400;
+            }
+            h4{
+                font-size: 16px;
+                font-weight: 200;
+            }
         }
         button{
            text-align: start;
         }
     }
 }
+
+@media (max-width: 720px) {
+    .sobre{
+        flex-direction: column;
+        // margin-top: 55px;
+        // .sobre_min{
+
+        // }
+    }
+}
+
+.escondido {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+  
+  .visivel {
+    visibility: visible;
+    opacity: 1;
+  }
+  

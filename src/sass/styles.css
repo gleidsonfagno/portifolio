@@ -96,7 +96,7 @@ header nav .navigation_header li a:hover {
     animation-duration: 1s;
     right: 0; /* Adicionado para alinhar à direita */
     margin-right: -100vw;
-    height: 110vh;
+    height: 70vh;
   }
   header nav #navigation_header li .close {
     display: block;
@@ -194,35 +194,75 @@ header nav .navigation_header li a:hover {
   }
 }
 
+@media (max-width: 720px) {
+  .home {
+    justify-content: center;
+  }
+  .home .descricao {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
 .sobre {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 70px;
+  margin-top: 155px;
+  margin-bottom: 155px;
 }
 .sobre .avatar img {
   display: block;
-  max-width: 400px;
   width: 100%;
+  max-width: 440px;
   height: auto;
 }
 .sobre .sobre_min {
+  max-width: 590px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 32px;
   justify-content: center;
 }
+.sobre .sobre_min .descricao_pesoal p {
+  color: green;
+  font-size: 1rem;
+}
+.sobre .sobre_min .descricao_pesoal h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.sobre .sobre_min .descricao_pesoal h4 {
+  font-size: 16px;
+  font-weight: 200;
+}
 .sobre .sobre_min button {
   text-align: start;
+}
+
+@media (max-width: 720px) {
+  .sobre {
+    flex-direction: column;
+  }
+}
+.escondido {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.visivel {
+  visibility: visible;
+  opacity: 1;
 }
 
 body {
   max-width: 1060px;
   padding: 0 16px;
   margin: 0 auto;
-}
-body .sobre {
-  height: 700px;
 }
 body .projeto {
   height: 700px;
@@ -253,4 +293,15 @@ body .projeto {
   padding: 12px 28px;
   border-radius: 4px;
   margin-bottom: 24px;
+}
+
+.escondido {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.visivel {
+  visibility: visible;
+  opacity: 1;
 }/*# sourceMappingURL=styles.css.map */

@@ -42,12 +42,6 @@ button:hover, a:hover {
   filter: brightness(0.8);
 }
 
-@media (max-width: 720px) {
-  body {
-    position: fixed;
-    overflow-x: hidden;
-  }
-}
 header {
   margin: 24px 0 0;
   display: flex;
@@ -266,17 +260,6 @@ header nav .navigation_header li a:hover {
     flex-direction: column;
   }
 }
-.escondido {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
-}
-
-.visivel {
-  visibility: visible;
-  opacity: 1;
-}
-
 body {
   max-width: 1060px;
   padding: 0 16px;
@@ -359,6 +342,14 @@ body .projeto {
   text-align: start;
 }
 
+@media (max-width: 720px) {
+  .conteiner {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+}
 .destaque {
   background: transparent;
   border: 1px solid var(--cor1);

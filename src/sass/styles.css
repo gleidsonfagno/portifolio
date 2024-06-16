@@ -42,6 +42,12 @@ button:hover, a:hover {
   filter: brightness(0.8);
 }
 
+@media (max-width: 720px) {
+  body {
+    position: fixed;
+    overflow-x: hidden;
+  }
+}
 header {
   margin: 24px 0 0;
   display: flex;
@@ -146,6 +152,7 @@ header nav .navigation_header li a:hover {
   font-weight: 200;
   line-height: 24px;
   margin-bottom: 44px;
+  color: var(--cor8);
 }
 .home .descricao button {
   background: transparent;
@@ -247,7 +254,8 @@ header nav .navigation_header li a:hover {
 }
 .sobre .sobre_min .descricao_pesoal h4 {
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 100;
+  color: var(--cor8);
 }
 .sobre .sobre_min button {
   text-align: start;
@@ -276,7 +284,6 @@ body {
 }
 body .projeto {
   height: 700px;
-  background-color: rgb(189, 201, 197);
 }
 
 :root {
@@ -289,6 +296,67 @@ body .projeto {
   --surface-secondary: #413A4F;
   --cor8: #CDD0D4;
   --cor9: #F5F6F6;
+}
+
+.projeto p {
+  text-align: center;
+  color: green;
+  margin-bottom: 8px;
+}
+.projeto h2 {
+  font-size: 24px;
+  font-weight: 300px;
+  text-align: center;
+  margin-bottom: 63px;
+}
+.projeto .conteiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.projeto .conteiner .carde {
+  border-radius: 16px;
+  max-width: 331px;
+  width: 100%;
+  background-color: #2C243B;
+  padding: 24px;
+  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.projeto .conteiner .carde .img img {
+  max-width: 283px;
+  width: 100%;
+}
+.projeto .conteiner .carde .skil {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.projeto .conteiner .carde .skil span {
+  font-size: 14px;
+  color: var(--cor8);
+}
+.projeto .conteiner .carde .skil .linguagem {
+  display: flex;
+  gap: 1rem;
+}
+.projeto .conteiner .carde .skil .linguagem img {
+  display: block;
+  max-width: 100%;
+  width: 24px;
+}
+.projeto .conteiner .carde:hover {
+  box-shadow: 0 0 5px #00A813, 0 0 10px #00A813;
+}
+.projeto .conteiner .carde h3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+.projeto .conteiner .carde p {
+  color: var(--cor1);
+  text-align: start;
 }
 
 .destaque {

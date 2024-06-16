@@ -1,0 +1,71 @@
+.projeto{
+    p{
+        text-align: center;
+        color: green;
+        margin-bottom: 8px;
+    }
+    h2{
+        font-size: 24px;
+        font-weight: 300px;
+        text-align: center;
+        margin-bottom: 63px;
+    }
+    .conteiner{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .carde{
+            border-radius: 16px;
+            max-width: 331px;
+            width: 100%;
+            background-color: #2C243B;
+            padding: 24px;
+            transition: box-shadow 0.3s ease-in-out; 
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            
+            .img{
+                img{
+                    max-width: 283px;
+                    width: 100%;
+                }
+            }
+
+            .skil{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                span{
+                    font-size: 14px;
+                    color: var(--cor8);
+                }
+                .linguagem{
+                    display: flex;
+                    gap: 1rem;
+                    img{
+                        display: block;
+                        max-width: 100%;
+                        width: 24px;
+
+                    }
+                }
+            }
+
+            &:hover{
+                box-shadow: 0 0 5px #00A813, 
+              0 0 10px #00A813;
+
+              }
+            
+            h3 {
+                font-size: 20px;
+                font-weight: 300;
+            }
+            p{
+                color: var(--cor1);
+                text-align: start;
+            }
+        }
+    }
+}

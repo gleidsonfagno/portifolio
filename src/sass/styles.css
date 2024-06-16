@@ -227,6 +227,16 @@ header nav .navigation_header li a:hover {
   gap: 32px;
   justify-content: center;
 }
+.sobre .sobre_min .soft_skil {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.sobre .sobre_min .soft_skil img {
+  display: block;
+  max-width: 24px;
+  width: 100%;
+}
 .sobre .sobre_min .descricao_pesoal p {
   color: green;
   font-size: 1rem;

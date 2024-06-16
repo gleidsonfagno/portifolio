@@ -88,3 +88,19 @@
     }
   }
 }
+
+@media (max-width: 720px) {
+  .home {
+    justify-content: center;
+
+    .descricao{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+
+  }
+  
+
+}

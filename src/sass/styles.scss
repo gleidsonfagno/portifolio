@@ -2,12 +2,14 @@
 @import "./header";
 @import "./home";
 @import "./sobre";
-@import "./main";
-@import "./layout";
-@import "./tema";
 @import "./projetos";
+@import "./contato";
 
+@import "./layout";
+@import "./main";
+@import "./tema";
 @import "./button";
+@import "./social_link";
 
 .escondido {
     visibility: hidden;

@@ -13,7 +13,8 @@
     .conteiner{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 32px;
         
         .carde{
             border-radius: 16px;
@@ -75,7 +76,6 @@
     .conteiner{
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
         gap: 2rem;
 
     }

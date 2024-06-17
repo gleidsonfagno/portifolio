@@ -42,30 +42,36 @@ button:hover, a:hover {
   filter: brightness(0.8);
 }
 
-header {
-  margin: 24px 0 0;
+.btn_icon_header {
+  background: transparent;
+  border: none;
+  color: var(--color-white);
+  cursor: pointer;
+  display: none;
+}
+
+.header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 24px 0 0;
   justify-content: space-between;
+  height: 3.5em;
 }
-header .logo {
+.header .logo {
   font-weight: bold;
   font-size: 24px;
   font-family: "Poppins", sans-serif;
 }
-header .open {
-  display: none;
-}
-header nav .navigation_header {
+.header .navigation_header {
   display: flex;
   flex-direction: row;
   gap: 17px;
+  align-items: center;
+  z-index: 2;
+  padding-top: 1rem;
 }
-header nav .navigation_header li .close {
-  display: none;
-}
-header nav .navigation_header li a {
+.header .navigation_header a {
   padding: 0 16px;
   text-decoration: none;
   color: white;
@@ -73,45 +79,32 @@ header nav .navigation_header li a {
   padding-bottom: 2px;
   transition: border-color 0.3s;
 }
-header nav .navigation_header li a:hover {
+.header .navigation_header a:hover {
   border-bottom: 2px solid #fff;
 }
 
-@media (max-width: 720px) {
-  header .open {
-    display: flex;
-  }
-  header nav {
-    position: relative;
-  }
-  header nav #navigation_header {
+@media screen and (max-width: 768px) {
+  .navigation_header {
     position: absolute;
-    flex-direction: column;
-    text-align: start;
+    flex-direction: column !important;
+    top: 0;
+    background: var(--surface-secondary);
+    height: 100vh;
+    width: 50vw;
+    padding-top: 3rem;
     animation-duration: 1s;
-    top: 18px;
-    background: hwb(255 9% 87%/0.863);
-    width: 45vw;
-    padding: 1em;
-    animation-duration: 1s;
-    right: 0; /* Adicionado para alinhar à direita */
-    margin-right: -100vw;
-    height: 70vh;
+    margin-left: -100vw;
   }
-  header nav #navigation_header li .close {
+  .btn_icon_header {
     display: block;
-  }
-  header button {
-    background: transparent;
-    border: none;
   }
 }
 @keyframes showSidebar {
   from {
-    margin-right: -100vw;
+    margin-left: -100vw;
   }
   to {
-    margin-right: -45vw;
+    margin-left: -10vw;
   }
 }
 .home {
@@ -265,9 +258,6 @@ body {
   padding: 0 16px;
   margin: 0 auto;
 }
-body .projeto {
-  height: 700px;
-}
 
 :root {
   --cor1: #ffffff;
@@ -295,7 +285,8 @@ body .projeto {
 .projeto .conteiner {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 32px;
 }
 .projeto .conteiner .carde {
   border-radius: 16px;
@@ -346,7 +337,6 @@ body .projeto {
   .conteiner {
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     gap: 2rem;
   }
 }

@@ -224,7 +224,7 @@ button:hover, a:hover {
   font-size: 24px;
   font-weight: 400;
 }
-.sobre .sobre_min .descricao_pesoal h4 {
+.sobre .sobre_min .descricao_pesoal .descricao {
   font-size: 16px;
   font-weight: 100;
   color: var(--cor8);
@@ -245,7 +245,7 @@ button:hover, a:hover {
 }
 .projeto h2 {
   font-size: 24px;
-  font-weight: 300px;
+  font-weight: 300;
   text-align: center;
   margin-bottom: 63px;
 }
@@ -289,7 +289,7 @@ button:hover, a:hover {
   width: 24px;
 }
 .projeto .conteiner .carde:hover {
-  box-shadow: 0 0 5px #00A813, 0 0 10px #00A813;
+  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
 }
 .projeto .conteiner .carde h3 {
   font-size: 20px;

@@ -14,8 +14,9 @@
     width: 100%;
 
     h1 {
-      font-size: 36px;
+      font-size: 2.25rem;
       font-weight: 300;
+      line-height: 2.5rem;
       line-height: 40px;
       span {
         /* Primeiro passo: definir um degradê como fundo */
@@ -30,8 +31,8 @@
       margin-bottom: 10px;
     }
     p{
-        font-size: 18px;
-        font-weight: 200;
+        font-size: 1.125rem;
+        font-weight: 100;
         line-height: 24px;
         margin-bottom: 44px;
         color: var(--cor8);
@@ -82,6 +83,12 @@
       flex-direction: column;
       text-align: center;
       align-items: center;
+      h1{
+        font-size: 2rem;
+      }
+      p{
+        font-size: 1rem;
+      }
     }
 
   }

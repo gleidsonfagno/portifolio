@@ -20,7 +20,7 @@
   padding: 24px 0 0;
   justify-content: space-between;
 
-  height: 3.5em;
+  // height: 3.5em;
 
 
   .navigation_header {
@@ -38,6 +38,7 @@
       border-bottom: 2px solid transparent;
       padding-bottom: 2px;
       transition: border-color 0.3s;
+      font-size: 1.125rem;
 
       &:hover {
         border-bottom: 2px solid #fff;

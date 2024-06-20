@@ -23,6 +23,7 @@
   .destaque_contato {
     color: var(--cor1);
     margin-bottom: 16px;
+    line-height: 24px;
     span {
       /* Primeiro passo: definir um degradê como fundo */
       background: linear-gradient(to right, #d78f00, #f0534e);
@@ -43,7 +44,7 @@
     // max-width: 100%;
     font-size: 1rem;
     line-height: 24px;
-    div {
+    .input_group {
       display: flex;
       flex-direction: row;
       background-color: var(--cor10);

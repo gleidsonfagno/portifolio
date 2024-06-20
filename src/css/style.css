@@ -268,8 +268,7 @@ button:hover, a:hover {
   gap: 16px;
 }
 .projeto .conteiner .carde .img img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   max-width: 283px;
   width: 100%;
   height: 200px;
@@ -511,4 +510,6 @@ body .contato {
 .visivel {
   visibility: visible;
   opacity: 1;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -11,4 +11,12 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
   },
   plugins: [new Dotenv()],
+  // module: {
+  //   rules: [
+  //     {
+  //       test: /\.css$/i,
+  //       use: ['style-loader', 'css-loader'],
+  //     },
+  //   ],
+  // },
 };

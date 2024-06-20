@@ -26,3 +26,5 @@ estopu utilizadno o servi da para meu formulario
 ### Observações
 
 Este projeto ainda está em desenvolvimento e pode conter alguns erros. Qualquer feedback ou sugestão é bem-vindo.
+
+sass ./src/sass/styles.scss ./src/css/style.css

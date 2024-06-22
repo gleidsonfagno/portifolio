@@ -14,7 +14,6 @@ body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   background-image: linear-gradient(to bottom, #03091E, #191622);
-  background-color: #03091E;
   color: white;
   font-weight: 100;
   position: relative;
@@ -194,13 +193,29 @@ button:hover, a:hover {
     font-size: 1rem;
   }
 }
+@media (max-width: 480px) {
+  .home {
+    justify-content: center;
+  }
+  .home .descricao {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .home .descricao h1 {
+    font-size: 1.5rem;
+  }
+  .home .descricao p {
+    font-size: 0.8rem; /* Reduzindo o tamanho da fonte do parágrafo */
+  }
+}
 .sobre {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 70px;
-  margin-top: 155px;
-  margin-bottom: 155px;
+  padding-top: 155px;
 }
 .sobre .avatar img {
   display: block;
@@ -209,7 +224,6 @@ button:hover, a:hover {
   height: auto;
 }
 .sobre .sobre_min {
-  max-width: 590px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -229,10 +243,12 @@ button:hover, a:hover {
 .sobre .sobre_min .descricao_pesoal p {
   color: #07bed9;
   font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 .sobre .sobre_min .descricao_pesoal h2 {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
 }
 .sobre .sobre_min .descricao_pesoal .descricao {
   font-size: 16px;
@@ -247,6 +263,21 @@ button:hover, a:hover {
   .sobre {
     flex-direction: column;
   }
+}
+@media (max-width: 420px) {
+  .sobre .sobre_min .descricao_pesoal p {
+    font-size: 0.8rem;
+  }
+  .sobre .sobre_min .descricao_pesoal h2 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .sobre .sobre_min .descricao_pesoal .descricao {
+    font-size: 0.8rem;
+  }
+}
+.projeto {
+  padding-top: 155px;
 }
 .projeto p {
   text-align: center;

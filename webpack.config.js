@@ -5,6 +5,7 @@ module.exports = {
   mode: "production",
   entry: {
     emailjs: "./src/js/email_js.js",
+    animacoes: "./src/js/animacoes.js",
   },
   output: {
     filename: "[name].bundle.js",

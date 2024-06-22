@@ -3,8 +3,8 @@
     justify-content: space-between;
     align-items: center;
     gap: 70px;
-    margin-top: 155px;
-    margin-bottom: 155px;
+    padding-top: 155px;
+    // padding-bottom: 155px;
     .avatar{
         img{
             display: block;
@@ -16,7 +16,7 @@
         }
     }
     .sobre_min{
-        max-width: 590px;
+        // max-width: 590px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -36,10 +36,12 @@
             p{
                 color: #07bed9;
                 font-size: 1rem;
+                margin-bottom: .5rem;
             }
             h2{
                 font-size: 24px;
-                font-weight: 400;
+                font-weight: 300;
+                margin-bottom: .5rem;
             }
             .descricao{
                 font-size: 16px;
@@ -63,3 +65,24 @@
     }
 }
 
+
+@media (max-width: 420px ) {
+    .sobre{
+        .sobre_min{
+
+            .descricao_pesoal{
+                p{
+                    font-size: 0.8rem;
+                }
+                h2{
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+                .descricao{
+                    font-size: 0.8rem;
+                    
+                }
+            }
+        }
+    }
+}

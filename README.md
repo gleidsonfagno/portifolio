@@ -12,6 +12,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Sass
 - webpack
 - Git e Github
+- GSAP
 
 ## 💻 Projeto
 

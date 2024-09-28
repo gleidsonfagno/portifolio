@@ -33,11 +33,13 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--cor1);
 }
 
 button a {
   cursor: pointer;
   transition: filter 0.2s;
+  
 }
 
 button:hover, a:hover {

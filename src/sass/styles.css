@@ -581,4 +581,9 @@ body .contato {
 .visivel {
   visibility: visible;
   opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor1);
 }/*# sourceMappingURL=styles.css.map */

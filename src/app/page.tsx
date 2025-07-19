@@ -1,6 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import { SkillItem } from "./components/SkillItem";
+import { skills } from "./data/skills";
 
 const scrollToSection = (id: string) => {
   const section = document.getElementById(id);
@@ -24,31 +26,31 @@ export default function Home() {
                 onClick={() => scrollToSection("home")}
                 className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors relative group"
               >
-                Home
+                Casa
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all group-hover:w-full"></span>
               </button>
               <button
                 onClick={() => scrollToSection("about")}
                 className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors relative group"
               >
-                About
+                Sobre
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all group-hover:w-full"></span>
               </button>
               <button
                 onClick={() => scrollToSection("skills")}
                 className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors relative group"
               >
-                Skills
+                Habilidades
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all group-hover:w-full"></span>
               </button>
               <button
                 onClick={() => scrollToSection("projects")}
                 className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors relative group"
               >
-                Projects
+                Projetos
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all group-hover:w-full"></span>
               </button>
-              <button
+              {/* <button
                 onClick={() => scrollToSection("home")}
                 className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors relative group"
               >
@@ -61,7 +63,7 @@ export default function Home() {
               >
                 Contact
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all group-hover:w-full"></span>
-              </button>
+              </button> */}
             </div>
 
             <div className="flex items-center space-x-4">
@@ -239,7 +241,7 @@ export default function Home() {
                 Sobre Mim
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                Conheça mais sobre minha trajetória e paixão por tecnologia
+                Minha jornada profissional e denvolvimento com tecnologia
               </p>
             </div>
 
@@ -300,23 +302,14 @@ export default function Home() {
                     <div className="flex items-start gap-3">
                       <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                         <strong>Objetivo profissional:</strong> Desenvolvedor
-                        Front-End Júnior, em busca de oportunidades e
+                        Front-End, em busca de oportunidades e
                         crescimento
                       </p>
                     </div>
 
                     <div className="flex items-start gap-3">
                       <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                        {/* Apaixonado por tecnologia, aprendizado contínuo e boas
-                        práticas no desenvolvimento de software */}
-                        Minha jornada começou com curiosidade sobre como os
-                        sites funcionam, e hoje trabalho com as mais modernas
-                        tecnologias do mercado, sempre buscando entregar
-                        soluções que combinam performance, acessibilidade e
-                        design elegante. Quando não estou codificando, gosto de
-                        compartilhar conhecimento através de artigos e
-                        contribuições open source, sempre aprendendo e evoluindo
-                        junto com a comunidade de desenvolvedores.
+                        Desenvolvedor focado em tecnologia, boas práticas e evolução constante no desenvolvimento de software.
                       </p>
                     </div>
 
@@ -541,148 +534,14 @@ export default function Home() {
 
             <div className="mb-20 overflow-hidden">
               <div className="flex gap-8 animate-scroll-horizontal whitespace-nowrap">
-                <div className="flex-shrink-0 w-24 h-24 bg-white dark:bg-gray-800 rounded-xl shadow-lg flex flex-col items-center justify-center hover:shadow-xl transition-shadow cursor-pointer group">
-                  <Image
-                    src="/logos/variant=15.png"
-                    alt="image"
-                    width={1080}
-                    height={1080}
-                    className="w-10 h-10 mb-1 group-hover:scale-110 transition-transform "
-                  />
-                  <span className="text-xs font-medium text-gray-700 dark:text-gray-300 text-center px-1">
-                    CSS
-                  </span>
-                </div>
+                {skills.map((skill, index) => (
+                  <SkillItem key={index} {...skill} />
+                ))}
 
-                <div className="flex-shrink-0 w-24 h-24 bg-white dark:bg-gray-800 rounded-xl shadow-lg flex flex-col items-center justify-center hover:shadow-xl transition-shadow cursor-pointer group">
-                  <Image
-                    src="/logos/variant=16.png"
-                    alt="image"
-                    width={1080}
-                    height={1080}
-                    className="w-10 h-10 mb-1 group-hover:scale-110 transition-transform "
-                  />
-                  <span className="text-xs font-medium text-gray-700 dark:text-gray-300 text-center px-1">
-                    JavaScript
-                  </span>
-                </div>
-
-                <div className="flex-shrink-0 w-24 h-24 bg-white dark:bg-gray-800 rounded-xl shadow-lg flex flex-col items-center justify-center hover:shadow-xl transition-shadow cursor-pointer group">
-                  <Image
-                    src="/logos/variant=17.png"
-                    alt="image"
-                    width={1080}
-                    height={1080}
-                    className="w-10 h-10 mb-1 group-hover:scale-110 transition-transform "
-                  />
-                  <span className="text-xs font-medium text-gray-700 dark:text-gray-300 text-center px-1">
-                    React
-                  </span>
-                </div>
-
-                <div className="flex-shrink-0 w-24 h-24 bg-white dark:bg-gray-800 rounded-xl shadow-lg flex flex-col items-center justify-center hover:shadow-xl transition-shadow cursor-pointer group">
-                  <Image
-                    src="/logos/variant=18.png"
-                    alt="image"
-                    width={1080}
-                    height={1080}
-                    className="w-10 h-10 mb-1 group-hover:scale-110 transition-transform "
-                  />
-                  <span className="text-xs font-medium text-gray-700 dark:text-gray-300 text-center px-1">
-                    Next.js
-                  </span>
-                </div>
-
-                <div className="flex-shrink-0 w-24 h-24 bg-white dark:bg-gray-800 rounded-xl shadow-lg flex flex-col items-center justify-center hover:shadow-xl transition-shadow cursor-pointer group">
-                  <Image
-                    src="/logos/variant=19.png"
-                    alt="image"
-                    width={1080}
-                    height={1080}
-                    className="w-10 h-10 mb-1 group-hover:scale-110 transition-transform "
-                  />
-                  <span className="text-xs font-medium text-gray-700 dark:text-gray-300 text-center px-1">
-                    TypeScript
-                  </span>
-                </div>
-
-                <div className="flex-shrink-0 w-24 h-24 bg-white dark:bg-gray-800 rounded-xl shadow-lg flex flex-col items-center justify-center hover:shadow-xl transition-shadow cursor-pointer group">
-                  <Image
-                    src="/logos/variant=20.png"
-                    alt="image"
-                    width={1080}
-                    height={1080}
-                    className="w-10 h-10 mb-1 group-hover:scale-110 transition-transform "
-                  />
-                  <span className="text-xs font-medium text-gray-700 dark:text-gray-300 text-center px-1">
-                    Python
-                  </span>
-                </div>
-
-                <div className="flex-shrink-0 w-24 h-24 bg-white dark:bg-gray-800 rounded-xl shadow-lg flex flex-col items-center justify-center hover:shadow-xl transition-shadow cursor-pointer group">
-                  <Image
-                    src="/logos/variant=21.png"
-                    alt="image"
-                    width={1080}
-                    height={1080}
-                    className="w-10 h-10 mb-1 group-hover:scale-110 transition-transform "
-                  />
-                  <span className="text-xs font-medium text-gray-700 dark:text-gray-300 text-center px-1">
-                    Django
-                  </span>
-                </div>
-
-                <div className="flex-shrink-0 w-24 h-24 bg-white dark:bg-gray-800 rounded-xl shadow-lg flex flex-col items-center justify-center hover:shadow-xl transition-shadow cursor-pointer group">
-                  <Image
-                    src="/logos/variant=22.png"
-                    alt="image"
-                    width={1080}
-                    height={1080}
-                    className="w-10 h-10 mb-1 group-hover:scale-110 transition-transform "
-                  />
-                  <span className="text-xs font-medium text-gray-700 dark:text-gray-300 text-center px-1">
-                    MySQL
-                  </span>
-                </div>
-
-                <div className="flex-shrink-0 w-24 h-24 bg-white dark:bg-gray-800 rounded-xl shadow-lg flex flex-col items-center justify-center hover:shadow-xl transition-shadow cursor-pointer group">
-                  <Image
-                    src="/logos/variant=23.png"
-                    alt="image"
-                    width={1080}
-                    height={1080}
-                    className="w-10 h-10 mb-1 group-hover:scale-110 transition-transform "
-                  />
-                  <span className="text-xs font-medium text-gray-700 dark:text-gray-300 text-center px-1">
-                    PostegresSQL
-                  </span>
-                </div>
-
-                <div className="flex-shrink-0 w-24 h-24 bg-white dark:bg-gray-800 rounded-xl shadow-lg flex flex-col items-center justify-center hover:shadow-xl transition-shadow cursor-pointer group">
-                  <Image
-                    src="/logos/variant=24.png"
-                    alt="image"
-                    width={1080}
-                    height={1080}
-                    className="w-10 h-10 mb-1 group-hover:scale-110 transition-transform "
-                  />
-                  <span className="text-xs font-medium text-gray-700 dark:text-gray-300 text-center px-1">
-                    Docker
-                  </span>
-                </div>
-
-                <div className="flex-shrink-0 w-24 h-24 bg-white dark:bg-gray-800 rounded-xl shadow-lg flex flex-col items-center justify-center hover:shadow-xl transition-shadow cursor-pointer group">
-                  <Image
-                    src="/logos/variant=26.png"
-                    alt="image"
-                    width={1080}
-                    height={1080}
-                    className="w-10 h-10 mb-1 group-hover:scale-110 transition-transform "
-                  />
-                  <span className="text-xs font-medium text-gray-700 dark:text-gray-300 text-center px-1">
-                    Git
-                  </span>
-                </div>
+                {skills.map((skill, index) => (
+                  <SkillItem key={index} {...skill} />
+                ))}
+                
               </div>
             </div>
 
@@ -1235,28 +1094,29 @@ export default function Home() {
                 <h4 className="text-lg font-semibold mb-4">Links Rápidos</h4>
                 <ul className="space-y-2">
                   <li>
-                    <button className="text-gray-400 hover:text-white transition-colors">
+                    <button 
+                    onClick={() => scrollToSection("home")}
+                     className="text-gray-400 hover:text-white transition-colors">
                       Início
                     </button>
                   </li>
 
                   <li>
-                    <button className="text-gray-400 hover:text-white transition-colors">
+                    <button 
+                    onClick={() => scrollToSection("about")}
+                    className="text-gray-400 hover:text-white transition-colors">
                       Sobre
                     </button>
                   </li>
 
                   <li>
-                    <button className="text-gray-400 hover:text-white transition-colors">
+                    <button 
+                    onClick={() => scrollToSection("skills")}
+                    className="text-gray-400 hover:text-white transition-colors">
                       Projetos
                     </button>
                   </li>
 
-                  <li>
-                    <button className="text-gray-400 hover:text-white transition-colors">
-                      Contato
-                    </button>
-                  </li>
                 </ul>
               </div>
 

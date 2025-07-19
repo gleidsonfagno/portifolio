@@ -37,6 +37,6 @@ body {
 }
 
 .animate-scroll-horizontal {
-  animation: scroll-horizontal 5s linear infinite;
+  animation: scroll-horizontal 9s linear infinite;
 }
 

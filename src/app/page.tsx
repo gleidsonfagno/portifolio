@@ -612,7 +612,7 @@ export default function Home() {
                 <div className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors">
                   <span className="text-lg">
                     <Image
-                      src="/logos/variant=16.png"
+                      src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                       alt="image"
                       width={1080}
                       height={1080}
@@ -628,7 +628,7 @@ export default function Home() {
                 <div className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors">
                   <span className="text-lg">
                     <Image
-                      src="/logos/variant=23.png"
+                      src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg"
                       alt="image"
                       width={1080}
                       height={1080}
@@ -686,7 +686,7 @@ export default function Home() {
                 <div className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors">
                   <span className="text-lg">
                     <Image
-                      src="/logos/variant=24.png"
+                      src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png"
                       alt="image"
                       width={1080}
                       height={1080}
@@ -702,7 +702,7 @@ export default function Home() {
                 <div className="group flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors">
                   <span className="text-lg">
                     <Image
-                      src="https://tse3.mm.bing.net/th/id/OIP.LA0nCGiwTKIk0llD3P6O6wHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                      src="/vercel.svg"
                       alt="Vercel logo"
                       width={1080}
                       height={1080}

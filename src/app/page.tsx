@@ -319,7 +319,7 @@ export default function Home() {
                       </p>
                     </div> */}
 
-                    <div className="space-y-4">
+                    {/* <div className="space-y-4">
                       <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
                         Informações de Contato
                       </h3>
@@ -415,13 +415,13 @@ export default function Home() {
                           </a>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <a
-                    href="/curriculo.pdf"
+                    href="/gleidson_fagno_da_conceição_pinheiro.pdf"
                     download
                     className="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
                   >
@@ -570,7 +570,7 @@ export default function Home() {
                 <div className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors">
                   <span className="text-lg">
                     <Image
-                      src="/logos/variant=19.png"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
                       alt="image"
                       width={1080}
                       height={1080}
@@ -628,7 +628,7 @@ export default function Home() {
                 <div className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors">
                   <span className="text-lg">
                     <Image
-                      src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
                       alt="image"
                       width={1080}
                       height={1080}
@@ -686,7 +686,7 @@ export default function Home() {
                 <div className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors">
                   <span className="text-lg">
                     <Image
-                      src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
                       alt="image"
                       width={1080}
                       height={1080}

@@ -3,6 +3,9 @@
 import Image from "next/image";
 import { SkillItem } from "./components/SkillItem";
 import { skills } from "./data/skills";
+import Navbar from "./components/Nav";
+import Projects from "./components/Projects";
+
 
 const scrollToSection = (id: string) => {
   const section = document.getElementById(id);
@@ -12,98 +15,12 @@ const scrollToSection = (id: string) => {
 };
 
 export default function Home() {
+
+  
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
-        <nav className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold text-gray-900 dark:text-white">
-              Gleidson Fagno
-            </div>
-
-            <div className="hidden md:flex items-center space-x-8">
-              <button
-                onClick={() => scrollToSection("home")}
-                className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors relative group"
-              >
-                Casa
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all group-hover:w-full"></span>
-              </button>
-              <button
-                onClick={() => scrollToSection("about")}
-                className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors relative group"
-              >
-                Sobre
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all group-hover:w-full"></span>
-              </button>
-              <button
-                onClick={() => scrollToSection("skills")}
-                className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors relative group"
-              >
-                Habilidades
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all group-hover:w-full"></span>
-              </button>
-              <button
-                onClick={() => scrollToSection("projects")}
-                className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors relative group"
-              >
-                Projetos
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all group-hover:w-full"></span>
-              </button>
-              {/* <button
-                onClick={() => scrollToSection("home")}
-                className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors relative group"
-              >
-                Blog
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all group-hover:w-full"></span>
-              </button>
-              <button
-                onClick={() => scrollToSection("home")}
-                className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors relative group"
-              >
-                Contact
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all group-hover:w-full"></span>
-              </button> */}
-            </div>
-
-            <div className="flex items-center space-x-4">
-              <button className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="lucide lucide-moon"
-                >
-                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
-                </svg>
-              </button>
-              <button className="md:hidden p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="lucide lucide-menu"
-                >
-                  <line x1="4" x2="20" y1="12" y2="12" />
-                  <line x1="4" x2="20" y1="6" y2="6" />
-                  <line x1="4" x2="20" y1="18" y2="18" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </nav>
+        <Navbar />
       </header>
 
       <main>
@@ -149,7 +66,11 @@ export default function Home() {
                     </svg>
                     Ver Projetos
                   </button>
-                  <button className="border-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 dark:border-indigo-400 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-400 dark:hover:text-gray-900 font-medium py-3 px-8 rounded-lg transition-colors flex items-center justify-center gap-2">
+                  <a
+                    href="/gleidson_fagno_da_conceição_pinheiro.pdf"
+                    download
+                    className="border-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 dark:border-indigo-400 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-400 dark:hover:text-gray-900 font-medium py-3 px-8 rounded-lg transition-colors flex items-center justify-center gap-2"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -167,7 +88,7 @@ export default function Home() {
                       <line x1="12" x2="12" y1="15" y2="3" />
                     </svg>
                     Baixar Currículo
-                  </button>
+                  </a>
                 </div>
 
                 <div className="flex gap-6 justify-center lg:justify-start">
@@ -240,9 +161,6 @@ export default function Home() {
               <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
                 Sobre Mim
               </h2>
-              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                Minha jornada profissional e denvolvimento com tecnologia
-              </p>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -302,14 +220,14 @@ export default function Home() {
                     <div className="flex items-start gap-3">
                       <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                         <strong>Objetivo profissional:</strong> Desenvolvedor
-                        Front-End, em busca de oportunidades e
-                        crescimento
+                        Front-End, em busca de oportunidades e crescimento
                       </p>
                     </div>
 
                     <div className="flex items-start gap-3">
                       <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                        Desenvolvedor focado em tecnologia, boas práticas e evolução constante no desenvolvimento de software.
+                        Desenvolvedor focado em tecnologia, boas práticas e
+                        evolução constante no desenvolvimento de software.
                       </p>
                     </div>
 
@@ -541,7 +459,6 @@ export default function Home() {
                 {skills.map((skill, index) => (
                   <SkillItem key={index} {...skill} />
                 ))}
-                
               </div>
             </div>
 
@@ -747,7 +664,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800">
+
+        <Projects/>
+        {/* <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-4">Projetos</h2>
@@ -1024,7 +943,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* <section>blog</section> */}
 
@@ -1094,29 +1013,31 @@ export default function Home() {
                 <h4 className="text-lg font-semibold mb-4">Links Rápidos</h4>
                 <ul className="space-y-2">
                   <li>
-                    <button 
-                    onClick={() => scrollToSection("home")}
-                     className="text-gray-400 hover:text-white transition-colors">
+                    <button
+                      onClick={() => scrollToSection("home")}
+                      className="text-gray-400 hover:text-white transition-colors"
+                    >
                       Início
                     </button>
                   </li>
 
                   <li>
-                    <button 
-                    onClick={() => scrollToSection("about")}
-                    className="text-gray-400 hover:text-white transition-colors">
+                    <button
+                      onClick={() => scrollToSection("about")}
+                      className="text-gray-400 hover:text-white transition-colors"
+                    >
                       Sobre
                     </button>
                   </li>
 
                   <li>
-                    <button 
-                    onClick={() => scrollToSection("skills")}
-                    className="text-gray-400 hover:text-white transition-colors">
+                    <button
+                      onClick={() => scrollToSection("skills")}
+                      className="text-gray-400 hover:text-white transition-colors"
+                    >
                       Projetos
                     </button>
                   </li>
-
                 </ul>
               </div>
 

@@ -47,7 +47,7 @@ export default function Home() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-                  <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg hover:shadow-xl">
+                  <button onClick={() => scrollToSection("projects")} className="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg hover:shadow-xl">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
